@@ -1,0 +1,21 @@
+<svg id="Group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="110" viewBox="0 0 400 110">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffcb"/>
+      <stop offset="1" stop-color="#94ffa2"/>
+    </linearGradient>
+  </defs>
+  <rect id="Background" width="400" height="110" rx="2" fill="#fff"/>
+  <rect id="Shape" width="190" height="18" rx="2" transform="translate(120 62)"/>
+  <rect id="Shape-2" data-name="Shape" width="230" height="12" rx="2" transform="translate(120 30)" fill="url(#linear-gradient)"/>
+  <g id="Icon" transform="translate(30 25)">
+    <g id="Icon-2" data-name="Icon">
+      <g id="Group-2" data-name="Group">
+        <path id="Oval" d="M31.579,60C46.569,60,60,46.569,60,31.579,60,13.431,46.569,0,31.579,0,13.431,0,0,13.431,0,31.579,0,46.569,13.431,60,31.579,60Z"/>
+        <text id="Label" transform="translate(30.5 33)" fill="#fff" font-size="20" font-family="Helvetica"><tspan x="-5.562" y="0">L</tspan></text>
+      </g>
+      <rect id="Bounds" width="60" height="60" fill="none"/>
+    </g>
+    <rect id="Bounds-2" data-name="Bounds" width="60" height="60" fill="none"/>
+  </g>
+</svg>

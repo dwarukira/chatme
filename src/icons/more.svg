@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="6" viewBox="0 0 26 6">
+  <g id="Options" opacity="0.3">
+    <circle id="Dot" cx="3" cy="3" r="3" transform="translate(20)" fill="#292f4c"/>
+    <circle id="Dot-2" data-name="Dot" cx="3" cy="3" r="3" transform="translate(10)" fill="#292f4c"/>
+    <circle id="Dot-3" data-name="Dot" cx="3" cy="3" r="3" fill="#292f4c"/>
+  </g>
+</svg>
