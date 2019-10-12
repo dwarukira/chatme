@@ -52,6 +52,13 @@ const StyledCard = styled.div`
     }
 `
 
+
+function* range(start, end) {
+    yield start;
+    if (start === end) return;
+    yield* range(start + 1, end);
+}
+
 const UserCard = ({ nickname, photoUrl }: any) => {
 
     return (
@@ -126,23 +133,14 @@ export const UserList = observer(() => {
 
     return (
         <div>
-            {loading && (
-                <>
-                    <StyledCard>
+            {loading && (<> {
+                [...range(1, 5)].map((item) => (
+                    <StyledCard key={item}>
                         <UserLoader />
                     </StyledCard>
-
-                    <StyledCard>
-                        <UserLoader />
-                    </StyledCard>
-
-                    <StyledCard>
-                        <UserLoader />
-                    </StyledCard>
-                    
-                    
-                </>
-            )}
+                ))
+            } </>) }
+               
             
             {listUser && renderListUser()}
         </div>
