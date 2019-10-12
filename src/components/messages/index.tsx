@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import styled from "styled-components"
 import { observer } from "mobx-react-lite"
 import moment from 'moment';
@@ -99,7 +99,7 @@ const hashString = str => {
 
 export const Messages = observer(() => {
     const listMessage: any = []
-    
+    const [loading, setLoading] = useState(false)
     let removeListener: any
     const currentUserId = localStorage.getItem(ID)
     const messageStore = useContext(MessageStoreContext)
@@ -113,6 +113,7 @@ export const Messages = observer(() => {
             removeListener()
         }
         messageStore.clearMessages()
+        setLoading(true)
         if (hashString(currentUserId) <= hashString(messageStore.currentPeer.id)) {
             messageStore.setgroupChatId(`${currentUserId}-${messageStore.currentPeer.id}`)
         } else {
@@ -133,7 +134,9 @@ export const Messages = observer(() => {
                             
                         }
                     })
-                }
+                    setLoading(false)
+                },
+                
             )
 
 
@@ -165,15 +168,14 @@ export const Messages = observer(() => {
         }
 
 
-        return <div> <ChartLoader /> </div>
+        return <h3> Say hi 👋 </h3>
     }
 
 
 
     return (
         <StyledMessages>
-            
-
+            {loading && (<ChartLoader />)}
             {renderListMessage()}
 
 
