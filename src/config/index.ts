@@ -1,5 +1,6 @@
 import firebase from "firebase"
 
+// TODO move the config data to enviroment variables
 const config = {
     apiKey: "AIzaSyBf99jx8FkTMEVvLwiRJm7MtiY9f7K5ndA",
     authDomain: "chatme-50f0e.firebaseapp.com",
